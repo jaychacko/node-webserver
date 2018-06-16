@@ -24,12 +24,12 @@ app.use((req, res, next) => {
     next();
 })
 
-app.use((req, res, next) => {
-    res.render('maintaince.hbs', {
-        pageTitle: 'Maintaince Work',
-        welcomeMessage: 'We will be right back....',
-    })
-})
+// app.use((req, res, next) => {
+//     res.render('maintaince.hbs', {
+//         pageTitle: 'Maintaince Work',
+//         welcomeMessage: 'We will be right back....',
+//     })
+// })
 
 hbs.registerHelper('getCurrentYear', () => {
     return new Date().getFullYear();
